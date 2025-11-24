@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Heldo! I made a RN App!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="dark" />
     </View>
   );
 }
@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 28,
-    color: 'blue',
+    color: 'black',
   }
 });
