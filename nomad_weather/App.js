@@ -1,27 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Heldo! I made a RN App!</Text>
-      <StatusBar style="dark" />
+    <View style={{ flex: 1 }}>
+      <View style={{ flex: 2, backgroundColor: "tomato"}}></View>
+      <View style={{ flex: 5, backgroundColor: "teal"}}></View>
+      <View style={{ flex: 1, backgroundColor: "orange"}}></View>
     </View>
   );
 }
 
 
-// StyleSheet.create :: object를 생성하는데 사용함..
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: 28,
-    color: 'black',
-  }
-});
